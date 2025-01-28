@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjemploForm.MainPage">
+
+    <VerticalStackLayout>
+        <Entry x:Name="txtNombre"
+               Margin="5" Placeholder="Escriba aqui su nombre"></Entry>
+        <Entry x:Name="txtEdad"
+               Margin="5"
+               Placeholder="Escriba aqui su edad"></Entry>
+        <Entry x:Name="txtOcupacion"
+               Margin="5"
+               Placeholder="Escriba aqui su ocupación"></Entry>
+        <Entry x:Name="txtDireccion"
+               Margin="5"
+               Placeholder="Escriba aqui su dirección"></Entry>
+
+        <Button x:Name="btnGuardar"
+                Text="Guardar"
+                Clicked="btnGuardar_Clicked"></Button>
+    </VerticalStackLayout>
+
+</ContentPage>
