@@ -20,12 +20,18 @@ namespace EjemploForm
             per.Direccion = txtDireccion.Text;
 
             RestClient cliente = new RestClient();
-            RestRequest peticion = new RestRequest("url Api",Method.Post);
+            RestRequest peticion = new RestRequest("https://localhost:44306/api/Personas/", Method.Post);
 
             peticion.AddBody(per);
 
             var respuesta = cliente.ExecuteAsync(peticion);
+
+            DisplayAlert("", "Guardado con exito", "Ok");
+        }
+
+        private void btnLista_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ListaRegistros());
         }
     }
-
 }

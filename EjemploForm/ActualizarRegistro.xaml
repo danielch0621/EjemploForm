@@ -1,11 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EjemploForm.MainPage">
-
+             x:Class="EjemploForm.ActualizarRegistro"
+             Title="ActualizarRegistro">
     <VerticalStackLayout>
         <Entry x:Name="txtNombre"
-               Margin="5" Placeholder="Escriba aqui su nombre"></Entry>
+               Margin="5"
+               Placeholder="Escriba aqui su nombre"></Entry>
         <Entry x:Name="txtEdad"
                Margin="5"
                Placeholder="Escriba aqui su edad"></Entry>
@@ -20,11 +21,5 @@
                 Text="Guardar"
                 Margin="5"
                 Clicked="btnGuardar_Clicked"></Button>
-
-        <Button x:Name="btnLista"
-                Margin="5"
-                Text="Ver registros"
-                Clicked="btnLista_Clicked"></Button>
     </VerticalStackLayout>
-
 </ContentPage>
